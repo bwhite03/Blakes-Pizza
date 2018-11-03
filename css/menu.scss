@@ -1,0 +1,261 @@
+#menu{
+   .menu-items{
+      padding: 15px;
+      text-align: center;
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      h2{
+         display: none;
+         font-family: 'Roboto', sans-serif;
+         color: #681a1e;
+      }
+      a{
+         text-decoration: none;
+         padding: 10px;
+         color: #681a1e;
+         font-family: 'Roboto', sans-serif;
+         &:hover{
+            border-bottom: 2px solid #681a1e;
+         }
+      }
+   }
+}
+#menu-items{
+   .menu-container{
+      width: 75%;
+      max-width: 1100px;
+      margin: 0 auto;
+      a{
+         text-decoration: none;
+         .order-now{
+            text-transform: uppercase;
+            text-align: center;
+            background: #b32c50;
+            width: 50%;
+            margin: 30px auto;
+            padding: 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: white;
+         }
+      }
+      .menu-items{
+         margin-bottom: 40px;
+         .pizza{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            height: 100px;
+            margin-top: 15px;
+            .image{
+               display: inline-block;
+               background: url(img/pepperoniPizza.jpg);
+               background-position: center;
+               background-size: cover;
+               width: 20%;
+               min-width: 100px;
+               height: 100px;
+            }
+            .name{
+               display: inline-block;
+               position: absolute;
+               padding: 10px;
+               z-index: 1;
+               h2{
+                  font-size: 30px;
+                  font-family: 'Roboto', sans-serif;
+                  color: #b32c50;
+               }
+            }
+            &:hover{
+               background: #b32c50;
+               cursor: pointer;
+               h2{
+                  color: white;
+               }
+            }
+         }
+         .bread{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            height: 100px;
+            margin-top: 15px;
+            .image{
+               display: inline-block;
+               background: url(img/breadsticks.jpg);
+               background-position: center;
+               background-size: cover;
+               width: 20%;
+               min-width: 100px;
+               height: 100px;
+            }
+            .name{
+               display: inline-block;
+               position: absolute;
+               padding: 10px;
+               h2{
+                  font-size: 30px;
+                  font-family: 'Roboto', sans-serif;
+                  color: #b32c50;
+               }
+            }
+            &:hover{
+               background: #b32c50;
+               cursor: pointer;
+               h2{
+                  color: white;
+               }
+            }
+         }
+         .chicken{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            height: 100px;
+            margin-top: 15px;
+            .image{
+               display: inline-block;
+               background: url(img/buffalowings.jpg);
+               background-position: center;
+               background-size: cover;
+               width: 20%;
+               min-width: 100px;
+               height: 100px;
+            }
+            .name{
+               display: inline-block;
+               position: absolute;
+               padding: 10px;
+               h2{
+                  font-size: 30px;
+                  font-family: 'Roboto', sans-serif;
+                  color: #b32c50;
+               }
+            }
+            &:hover{
+               background: #b32c50;
+               cursor: pointer;
+               h2{
+                  color: white;
+               }
+            }
+         }
+         .pasta{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            height: 100px;
+            margin-top: 15px;
+            .image{
+               display: inline-block;
+               background: url(img/lasagna.jpg);
+               background-position: center;
+               background-size: cover;
+               width: 20%;
+               min-width: 100px;
+               height: 100px;
+            }
+            .name{
+               display: inline-block;
+               position: absolute;
+               padding: 10px;
+               h2{
+                  font-size: 30px;
+                  font-family: 'Roboto', sans-serif;
+                  color: #b32c50;
+               }
+            }
+            &:hover{
+               background: #b32c50;
+               cursor: pointer;
+               h2{
+                  color: white;
+               }
+            }
+         }
+         .dessert{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            height: 100px;
+            margin-top: 15px;
+            .image{
+               display: inline-block;
+               background: url(img/brownie.jpg);
+               background-position: center;
+               background-size: cover;
+               width: 20%;
+               min-width: 100px;
+               height: 100px;
+            }
+            .name{
+               display: inline-block;
+               position: absolute;
+               padding: 10px;
+               h2{
+                  font-size: 30px;
+                  font-family: 'Roboto', sans-serif;
+                  color: #b32c50;
+               }
+            }
+            &:hover{
+               background: #b32c50;
+               cursor: pointer;
+               h2{
+                  color: white;
+               }
+            }
+         }
+         .drinks{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            height: 100px;
+            margin-top: 15px;
+            .image{
+               display: inline-block;
+               background: url(img/coke.jpg);
+               background-position: center;
+               background-size: cover;
+               width: 20%;
+               min-width: 100px;
+               height: 100px;
+            }
+            .name{
+               display: inline-block;
+               position: absolute;
+               padding: 10px;
+               h2{
+                  font-size: 30px;
+                  font-family: 'Roboto', sans-serif;
+                  color: #b32c50;
+               }
+            }
+            &:hover{
+               background: #b32c50;
+               cursor: pointer;
+               h2{
+                  color: white;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media all and (max-width: 620px){
+   #menu{
+      .menu-items{
+         h2{
+            display: block;
+         }
+         a{
+            display: none;
+         }
+      }
+   }
+}

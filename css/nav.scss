@@ -1,0 +1,126 @@
+#header{
+   nav{
+      background: #681a1e;
+      text-align: right;
+      width: 100%;
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      .logo{
+         text-decoration: none;
+         color: white;
+         text-align: center;
+         float: left;
+         padding-left: 10px;
+         img{
+            width: 55px;
+         }
+      }
+      ul{
+         text-align: right;
+         display: inline-block;
+         background: #681a1e;
+        
+         li{
+            display: inline-block;
+            &:hover{
+               background: #b32c50;
+            }
+            a{
+               color: white;
+               text-decoration: none;
+               font-size: 16px;
+               font-family: 'Roboto', sans-serif;
+               display: block;
+               padding: 20px 17px;
+            }
+            .fa-angle-down{
+               font-size: 12px;
+               padding-left: 3px;
+            }
+            .fa-shopping-cart{
+               padding-left: 3px;
+               font-size: 12px;
+            }
+         }
+         .menu{
+            &:hover{
+               .dropdown{
+                  display: block;
+                  
+               }
+            }
+            .dropdown{
+               position: absolute;
+               top: 55px;
+               right: 129px;
+               background: #681a1e;
+               padding: 0;
+               display: none;
+               width: 151px;
+               z-index: 1000;
+               -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+               -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+               box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+               li{
+                  display: block;
+                  text-align: center;
+               }
+            }
+         }
+      }
+      .hamburger{
+         position: fixed;
+         display: none;
+         top: 10px;
+         right: 10px;
+         z-index: 100;
+         cursor: pointer;
+         span{
+            background: #000;
+            border-radius: 3px;
+            display: block;
+            height: 3px;
+            margin-top: 5px;
+            padding: 0;
+            position: relative;
+            transition: all 0.2s ease;
+            width: 25px;
+            z-index: 1000;
+         } 
+      }
+      .active{
+         .one{
+            -webkit-transform: rotate3d(0, 0, 1, 45deg);
+            transform: rotate3d(0, 0, 1, 45deg);
+            top: 7px;
+         }
+         .two{
+            opacity: 0;
+         }
+         .three{
+            -webkit-transform: rotate3d(0,0,1,-45deg);
+            transform: rotate3d(0,0,1,-45deg);
+            top: -9px;
+         }
+      }
+   }
+}
+
+@media all and (max-width: 550px){
+   #header{
+      nav{
+         height: 60px;
+         .logo{
+            
+         }
+         ul{
+            display:none;
+         }
+         .hamburger{
+            display: block;
+            top: 16px;
+         }
+      }
+   }
+}

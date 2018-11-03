@@ -1,0 +1,45 @@
+#footer{
+   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   background: #dbdbdb;
+   padding: 30px;
+   text-align: center;
+   .name{
+      display: inline-block;
+      width: 250px;
+      text-align: center;
+      background: url(img/pizzaLogo.png);
+      background-position: center;
+      background-size: cover;
+      height: 110px;
+   }
+   .icons{
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      .fab{
+         font-size: 30px;
+         color: #681a1e;
+         padding: 15px;
+      }
+   }
+   .links{
+      text-align: center;
+      padding-top: 10px;
+      a{
+         text-decoration: none;
+         padding: 10px;
+         font-size: 20px;
+         color: #681a1e;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 700;
+      }
+      p{
+         padding-top: 10px;
+         color: #681a1e;
+         font-family: 'Roboto', sans-serif;
+         font-size: 13px;
+      }
+   }
+}

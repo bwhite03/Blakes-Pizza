@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    <section id="hamburger">
+        <div class="hamburger-menu animated slideInDown">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="coupon.html">Coupons</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </div>
+    </section>
+   <section id="header">
+      <nav>
+        <a class="logo" href="index.html"><img src="img/pizzaLogo.png" alt=""></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="menu"><a href="menu.html">Menu<i class="fas fa-angle-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="bread.html">Bread Sticks</a></li>
+                    <li><a href="chicken.html">Chicken</a></li>
+                    <li><a href="pasta.html">Pasta</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                </ul>
+            </li>
+            <li><a href="coupon.html">Coupons</a></li>
+            <li><a href="order.html">Order<i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </div>
+      </nav>
+   </section>    
+   <section id="menu">
+        <div class="menu-items">
+            <h1>Place Your Order!</h1>
+        </div>
+   </section>
+   <section id="order">
+    <div class="order-container">
+        <div class="order-now">
+            <h1>Place Order</h1>
+        </div>
+        <h3>Order History</h3>
+        <h5 class="desktop">View On Desktop To See Order History</h5>
+        <table>
+            <tr>
+                <th>Size</th>
+                <th>Pizza</th>
+                <th>Bread</th>
+                <th>Chicken</th>
+                <th>Pasta</th>
+                <th>Dessert</th>
+                <th>Drink</th>
+                <th>Delete</th>
+            </tr>
+            <tbody id="order-list"></tbody>
+        </table>
+        <div class="form-container">
+            <div class="pizza">
+                <h2>Pizza Choices</h2>
+                <form action="">
+                    <label for="sizes">Sizes</label>
+                    <select name="sizes" id="sizes">
+                        <option value="" selected disabled hidden>Select Size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <label for="type">Type of Pizza</label>
+                    <select name="type" id="pizzaType">
+                        <option value="" selected disabled hidden>Select Pizza</option>
+                        <option value="Cheese">Cheese</option>
+                        <option value="Pepperoni">Pepperoni</option>
+                        <option value="Sausage">Sausage</option>
+                        <option value="Meatlovers">Meatlovers</option>
+                        <option value="Veggie">Veggie</option>
+                        <option value="Hawiian">Hawiian</option>
+                        <option value="Buffalo Chicken">Buffalo Chicken</option>
+                    </select>
+                </form>
+            </div>
+            <div class="bread">
+                <h2>Bread Choices</h2>
+                <form action="">
+                    <label for="type">Type Of Bread</label>
+                    <select name="type" id="bread">
+                        <option value="" selected disabled hidden>Select Bread</option>
+                        <option value="Cheese Sticks">Cheese Sticks</option>
+                        <option value="Bread Sticks">Bread Sticks</option>
+                        <option value="Cinnamon Bread">Cinnamon Bread</option>
+                    </select>
+                </form>
+            </div>
+            <div class="chicken">
+                <h2>Chicken Choices</h2>
+                <form action="">
+                    <label for="type">Type Of Chicken</label>
+                    <select name="type" id="chicken">
+                        <option value="" selected disabled hidden>Select Chicken</option>
+                        <option value="Buffalo">Buffalo</option>
+                        <option value="Jalapeno">Jalapeno</option>
+                        <option value="BQQ">BBQ</option>
+                        <option value="Boneless">Boneless</option>
+                        <option value="Hot">Hot</option>
+                        <option value="Plain">Plain</option>
+                    </select>
+                </form>
+            </div>
+            <div class="pasta">
+                <h2>Pasta Choices</h2>
+                <form action="">
+                    <label for="type">Type Of Pasta</label>
+                    <select name="type" id="pasta">
+                        <option value="" selected disabled hidden>Select Pasta</option>
+                        <option value="Chicken Alfredo">Chicken Alfredo</option>
+                        <option value="Lasagna">Lasagna</option>
+                        <option value="Spaghetti">Spaghetti</option>
+                    </select>
+                </form>
+            </div>
+            <div class="dessert">
+                <h2>Dessert Choices</h2>
+                <form action="">
+                    <label for="type">Type Of Dessert</label>
+                    <select name="type" id="dessert">
+                        <option value="" selected disabled hidden>Select Dessert</option>
+                        <option value="Cinnamon Bread">Cinnamon Bread</option>
+                        <option value="Brownies">Brownies</option>
+                        <option value="Lava Cake">Lava Cake</option>
+                    </select>
+                </form>
+            </div>
+            <div class="drinks">
+                <h2>Drink Choices</h2>
+                <form action="">
+                    <label for="type">Type Of Drink</label>
+                    <select name="type" id="drink">
+                        <option value="" selected disabled hidden>Select Drink</option>
+                        <option value="Coke">Coke</option>
+                        <option value="Diet Coke">Diet Coke</option>
+                        <option value="Fanta">Fanta</option>
+                        <option value="Sprite">Sprite</option>
+                        <option value="Water">Water</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+   </section>
+   <footer id="footer">
+    <div class="name">
+       
+    </div>
+    <div class="icons">
+         <a href="#"><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><i class="fab fa-twitter"></i></a>
+         <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="links">
+         <a href="menu.html">Menu</a>
+         <a href="coupon.html">Coupons</a>
+         <a href="order.html">Order</a>
+         <p>2018 | Blake's Pizza Community | All Rights Reserved</p>
+    </div>
+</footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>

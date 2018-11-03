@@ -1,0 +1,2499 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Satisfy");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+#header nav {
+  background: #681a1e;
+  text-align: right;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  #header nav .logo {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    float: left;
+    padding-left: 10px; }
+    #header nav .logo img {
+      width: 55px; }
+  #header nav ul {
+    text-align: right;
+    display: inline-block;
+    background: #681a1e; }
+    #header nav ul li {
+      display: inline-block; }
+      #header nav ul li:hover {
+        background: #b32c50; }
+      #header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        display: block;
+        padding: 20px 17px; }
+      #header nav ul li .fa-angle-down {
+        font-size: 12px;
+        padding-left: 3px; }
+      #header nav ul li .fa-shopping-cart {
+        padding-left: 3px;
+        font-size: 12px; }
+    #header nav ul .menu:hover .dropdown {
+      display: block; }
+    #header nav ul .menu .dropdown {
+      position: absolute;
+      top: 55px;
+      right: 129px;
+      background: #681a1e;
+      padding: 0;
+      display: none;
+      width: 151px;
+      z-index: 1000;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+      #header nav ul .menu .dropdown li {
+        display: block;
+        text-align: center; }
+  #header nav .hamburger {
+    position: fixed;
+    display: none;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    cursor: pointer; }
+    #header nav .hamburger span {
+      background: #000;
+      border-radius: 3px;
+      display: block;
+      height: 3px;
+      margin-top: 5px;
+      padding: 0;
+      position: relative;
+      transition: all 0.2s ease;
+      width: 25px;
+      z-index: 1000; }
+  #header nav .active .one {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    top: 7px; }
+  #header nav .active .two {
+    opacity: 0; }
+  #header nav .active .three {
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    top: -9px; }
+
+@media all and (max-width: 550px) {
+  #header nav {
+    height: 60px; }
+    #header nav ul {
+      display: none; }
+    #header nav .hamburger {
+      display: block;
+      top: 16px; } }
+#hamburger .hamburger-menu {
+  position: fixed;
+  background: #681a1e;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 10; }
+  #hamburger .hamburger-menu img {
+    position: absolute;
+    width: 50px; }
+  #hamburger .hamburger-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
+    #hamburger .hamburger-menu ul li {
+      padding: 10px; }
+      #hamburger .hamburger-menu ul li a {
+        text-decoration: none;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+
+#landing {
+  height: 50vh;
+  background: url(img/tables.jpg);
+  background-position: center;
+  background-size: cover; }
+  #landing .info {
+    padding: 90px;
+    text-align: center; }
+    #landing .info h1 {
+      font-size: 60px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700; }
+    #landing .info h2 {
+      margin-top: 20px;
+      font-size: 30px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700; }
+
+.container {
+  width: 75%;
+  max-width: 1100px;
+  margin: 0 auto; }
+  .container #welcome {
+    padding-top: 60px; }
+    .container #welcome .welcome h2 {
+      color: #681a1e;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center; }
+    .container #welcome .welcome p {
+      margin: 0 auto;
+      width: 55%;
+      min-width: 300px;
+      padding-top: 20px;
+      color: #110c11;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      line-height: 1.5; }
+    .container #welcome .welcome a {
+      text-decoration: none; }
+      .container #welcome .welcome a .button {
+        text-align: center;
+        margin-top: 10px;
+        background: #681a1e;
+        width: 100px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700; }
+  .container #custom {
+    margin-top: 60px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .container #custom .yourpizza {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+      .container #custom .yourpizza .info {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: #222;
+        padding: 10px; }
+        .container #custom .yourpizza .info h2 {
+          font-family: 'Roboto', sans-serif;
+          color: white;
+          text-align: center; }
+        .container #custom .yourpizza .info h3 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white;
+          text-align: center;
+          padding-top: 5px;
+          font-size: 20px; }
+      .container #custom .yourpizza .image {
+        background: url(img/pepperoniPizza.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 150px; }
+    .container #custom .giftcard {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+      .container #custom .giftcard .info {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: #222;
+        padding: 10px; }
+        .container #custom .giftcard .info h2 {
+          font-family: 'Roboto', sans-serif;
+          color: white;
+          text-align: center; }
+        .container #custom .giftcard .info h3 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white;
+          text-align: center;
+          padding-top: 5px;
+          font-size: 20px; }
+      .container #custom .giftcard .image {
+        background: url(img/giftcard.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 150px; }
+    .container #custom .order-online {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+      .container #custom .order-online .info {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background: #222;
+        padding: 10px; }
+        .container #custom .order-online .info h2 {
+          font-family: 'Roboto', sans-serif;
+          color: white;
+          text-align: center; }
+        .container #custom .order-online .info h3 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white;
+          text-align: center;
+          padding-top: 5px;
+          font-size: 20px; }
+      .container #custom .order-online .image {
+        background: url(img/orderonline.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 150px; }
+
+#specials {
+  padding: 60px 0 60px 0;
+  margin-top: 60px;
+  background: #f56a47; }
+  #specials .special-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #specials .special-container .title {
+      text-align: center;
+      color: #110c11; }
+      #specials .special-container .title .name {
+        font-family: 'Satisfy', cursive;
+        font-size: 40px;
+        font-weight: 700; }
+      #specials .special-container .title .special {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 20px; }
+      #specials .special-container .title p {
+        padding-top: 20px;
+        font-family: 'Roboto', sans-serif; }
+    #specials .special-container .days {
+      padding-top: 30px;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      text-align: center;
+      color: #110c11; }
+      #specials .special-container .days .tuesday h1 {
+        font-family: 'Satisfy', cursive;
+        font-size: 25px;
+        padding-bottom: 10px; }
+      #specials .special-container .days .tuesday h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding-bottom: 5px; }
+      #specials .special-container .days .tuesday p {
+        font-family: 'Roboto', sans-serif; }
+      #specials .special-container .days .wednesday h1 {
+        font-family: 'Satisfy', cursive;
+        font-size: 25px;
+        padding-bottom: 10px; }
+      #specials .special-container .days .wednesday h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding-bottom: 5px; }
+      #specials .special-container .days .wednesday p {
+        font-family: 'Roboto', sans-serif; }
+      #specials .special-container .days .thursday h1 {
+        font-family: 'Satisfy', cursive;
+        font-size: 25px;
+        padding-bottom: 10px; }
+      #specials .special-container .days .thursday h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding-bottom: 5px; }
+      #specials .special-container .days .thursday p {
+        font-family: 'Roboto', sans-serif; }
+      #specials .special-container .days .friday h1 {
+        font-family: 'Satisfy', cursive;
+        font-size: 25px;
+        padding-bottom: 10px; }
+      #specials .special-container .days .friday h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding-bottom: 5px; }
+      #specials .special-container .days .friday p {
+        font-family: 'Roboto', sans-serif; }
+  #specials .pizza-special {
+    padding-top: 30px;
+    text-align: center;
+    color: #110c11; }
+    #specials .pizza-special h1 {
+      font-family: 'Satisfy', cursive;
+      font-weight: 700;
+      font-size: 30px; }
+    #specials .pizza-special p {
+      padding-top: 10px;
+      font-family: 'Roboto', sans-serif;
+      color: #110c11; }
+      #specials .pizza-special p span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #110c11; }
+
+#happy-hour {
+  background: #F0F0F0;
+  padding: 60px 0 60px 0;
+  text-align: center; }
+  #happy-hour .happy-hour-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #happy-hour .happy-hour-container .title {
+      color: #110c11; }
+      #happy-hour .happy-hour-container .title h1 {
+        font-family: 'Satisfy', cursive;
+        font-weight: 700;
+        font-size: 40px; }
+      #happy-hour .happy-hour-container .title h2 {
+        padding-top: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 20px; }
+    #happy-hour .happy-hour-container .time {
+      padding-top: 20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: #110c11; }
+    #happy-hour .happy-hour-container p {
+      padding-top: 20px;
+      line-height: 1.5;
+      font-family: 'Roboto', sans-serif;
+      color: #110c11; }
+
+#locations {
+  background: #222; }
+  #locations .locations-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center; }
+    #locations .locations-container .address1 {
+      display: inline-block;
+      padding: 60px; }
+      #locations .locations-container .address1 .address {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #f56a47;
+        text-transform: uppercase; }
+      #locations .locations-container .address1 .phone {
+        padding-top: 10px;
+        color: white;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700; }
+      #locations .locations-container .address1 .fulladdress {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+      #locations .locations-container .address1 .hours {
+        padding-top: 10px;
+        color: white;
+        font-family: 'Roboto', sans-serif; }
+        #locations .locations-container .address1 .hours span {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700; }
+      #locations .locations-container .address1 .closed {
+        padding-top: 20px;
+        color: white;
+        font-family: 'Roboto', sans-serif; }
+    #locations .locations-container .address2 {
+      display: inline-block;
+      padding: 60px; }
+      #locations .locations-container .address2 .address {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #f56a47;
+        text-transform: uppercase; }
+      #locations .locations-container .address2 .phone {
+        padding-top: 10px;
+        color: white;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700; }
+      #locations .locations-container .address2 .fulladdress {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+      #locations .locations-container .address2 .hours {
+        padding-top: 10px;
+        color: white;
+        font-family: 'Roboto', sans-serif; }
+        #locations .locations-container .address2 .hours span {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700; }
+      #locations .locations-container .address2 .closed {
+        padding-top: 20px;
+        color: white;
+        font-family: 'Roboto', sans-serif; }
+
+@media all and (max-width: 720px) {
+  .container #welcome .welcome p {
+    width: 100%;
+    min-width: 0; }
+  .container #custom {
+    grid-template-columns: 1fr; }
+
+  #specials .special-container .days {
+    grid-template-columns: 1fr; }
+
+  #locations .locations-container .address1 {
+    padding: 60px 0 20px 0; }
+  #locations .locations-container .address2 {
+    padding: 20px 0 60px 0; } }
+#menu .menu-items {
+  padding: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  #menu .menu-items h2 {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    color: #681a1e; }
+  #menu .menu-items a {
+    text-decoration: none;
+    padding: 10px;
+    color: #681a1e;
+    font-family: 'Roboto', sans-serif; }
+    #menu .menu-items a:hover {
+      border-bottom: 2px solid #681a1e; }
+
+#menu-items .menu-container {
+  width: 75%;
+  max-width: 1100px;
+  margin: 0 auto; }
+  #menu-items .menu-container a {
+    text-decoration: none; }
+    #menu-items .menu-container a .order-now {
+      text-transform: uppercase;
+      text-align: center;
+      background: #b32c50;
+      width: 50%;
+      margin: 30px auto;
+      padding: 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+  #menu-items .menu-container .menu-items {
+    margin-bottom: 40px; }
+    #menu-items .menu-container .menu-items .pizza {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      height: 100px;
+      margin-top: 15px; }
+      #menu-items .menu-container .menu-items .pizza .image {
+        display: inline-block;
+        background: url(img/pepperoniPizza.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 20%;
+        min-width: 100px;
+        height: 100px; }
+      #menu-items .menu-container .menu-items .pizza .name {
+        display: inline-block;
+        position: absolute;
+        padding: 10px;
+        z-index: 1; }
+        #menu-items .menu-container .menu-items .pizza .name h2 {
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+          color: #b32c50; }
+      #menu-items .menu-container .menu-items .pizza:hover {
+        background: #b32c50;
+        cursor: pointer; }
+        #menu-items .menu-container .menu-items .pizza:hover h2 {
+          color: white; }
+    #menu-items .menu-container .menu-items .bread {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      height: 100px;
+      margin-top: 15px; }
+      #menu-items .menu-container .menu-items .bread .image {
+        display: inline-block;
+        background: url(img/breadsticks.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 20%;
+        min-width: 100px;
+        height: 100px; }
+      #menu-items .menu-container .menu-items .bread .name {
+        display: inline-block;
+        position: absolute;
+        padding: 10px; }
+        #menu-items .menu-container .menu-items .bread .name h2 {
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+          color: #b32c50; }
+      #menu-items .menu-container .menu-items .bread:hover {
+        background: #b32c50;
+        cursor: pointer; }
+        #menu-items .menu-container .menu-items .bread:hover h2 {
+          color: white; }
+    #menu-items .menu-container .menu-items .chicken {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      height: 100px;
+      margin-top: 15px; }
+      #menu-items .menu-container .menu-items .chicken .image {
+        display: inline-block;
+        background: url(img/buffalowings.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 20%;
+        min-width: 100px;
+        height: 100px; }
+      #menu-items .menu-container .menu-items .chicken .name {
+        display: inline-block;
+        position: absolute;
+        padding: 10px; }
+        #menu-items .menu-container .menu-items .chicken .name h2 {
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+          color: #b32c50; }
+      #menu-items .menu-container .menu-items .chicken:hover {
+        background: #b32c50;
+        cursor: pointer; }
+        #menu-items .menu-container .menu-items .chicken:hover h2 {
+          color: white; }
+    #menu-items .menu-container .menu-items .pasta {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      height: 100px;
+      margin-top: 15px; }
+      #menu-items .menu-container .menu-items .pasta .image {
+        display: inline-block;
+        background: url(img/lasagna.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 20%;
+        min-width: 100px;
+        height: 100px; }
+      #menu-items .menu-container .menu-items .pasta .name {
+        display: inline-block;
+        position: absolute;
+        padding: 10px; }
+        #menu-items .menu-container .menu-items .pasta .name h2 {
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+          color: #b32c50; }
+      #menu-items .menu-container .menu-items .pasta:hover {
+        background: #b32c50;
+        cursor: pointer; }
+        #menu-items .menu-container .menu-items .pasta:hover h2 {
+          color: white; }
+    #menu-items .menu-container .menu-items .dessert {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      height: 100px;
+      margin-top: 15px; }
+      #menu-items .menu-container .menu-items .dessert .image {
+        display: inline-block;
+        background: url(img/brownie.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 20%;
+        min-width: 100px;
+        height: 100px; }
+      #menu-items .menu-container .menu-items .dessert .name {
+        display: inline-block;
+        position: absolute;
+        padding: 10px; }
+        #menu-items .menu-container .menu-items .dessert .name h2 {
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+          color: #b32c50; }
+      #menu-items .menu-container .menu-items .dessert:hover {
+        background: #b32c50;
+        cursor: pointer; }
+        #menu-items .menu-container .menu-items .dessert:hover h2 {
+          color: white; }
+    #menu-items .menu-container .menu-items .drinks {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      height: 100px;
+      margin-top: 15px; }
+      #menu-items .menu-container .menu-items .drinks .image {
+        display: inline-block;
+        background: url(img/coke.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 20%;
+        min-width: 100px;
+        height: 100px; }
+      #menu-items .menu-container .menu-items .drinks .name {
+        display: inline-block;
+        position: absolute;
+        padding: 10px; }
+        #menu-items .menu-container .menu-items .drinks .name h2 {
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+          color: #b32c50; }
+      #menu-items .menu-container .menu-items .drinks:hover {
+        background: #b32c50;
+        cursor: pointer; }
+        #menu-items .menu-container .menu-items .drinks:hover h2 {
+          color: white; }
+
+@media all and (max-width: 620px) {
+  #menu .menu-items h2 {
+    display: block; }
+  #menu .menu-items a {
+    display: none; } }
+#menu .menu-items {
+  padding: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  #menu .menu-items a {
+    text-decoration: none;
+    padding: 10px;
+    color: #681a1e;
+    font-family: 'Roboto', sans-serif; }
+
+#pizza-menu {
+  margin-bottom: 40px; }
+  #pizza-menu .pizza-menu-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #pizza-menu .pizza-menu-container a {
+      text-decoration: none; }
+      #pizza-menu .pizza-menu-container a .order-now {
+        text-transform: uppercase;
+        text-align: center;
+        background: #b32c50;
+        width: 50%;
+        margin: 30px auto;
+        padding: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+    #pizza-menu .pizza-menu-container .pizza-types {
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #pizza-menu .pizza-menu-container .pizzas {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px;
+      margin-top: 10px;
+      grid-gap: 10px; }
+      #pizza-menu .pizza-menu-container .pizzas .cheese {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pizza-menu .pizza-menu-container .pizzas .cheese .image {
+          background: url(img/cheesePizza.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pizza-menu .pizza-menu-container .pizzas .cheese h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #pizza-menu .pizza-menu-container .pizzas .pepperoni {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pizza-menu .pizza-menu-container .pizzas .pepperoni .image {
+          background: url(img/pepperoniPizza.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pizza-menu .pizza-menu-container .pizzas .pepperoni h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #pizza-menu .pizza-menu-container .pizzas .sausage .image {
+        background: url(img/sausagePizza.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100%; }
+      #pizza-menu .pizza-menu-container .pizzas .sausage h2 {
+        background: #b32c50;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+      #pizza-menu .pizza-menu-container .pizzas .supreme {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pizza-menu .pizza-menu-container .pizzas .supreme .image {
+          background: url(img/supremePizza.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pizza-menu .pizza-menu-container .pizzas .supreme h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #pizza-menu .pizza-menu-container .pizzas .meatlover {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pizza-menu .pizza-menu-container .pizzas .meatlover .image {
+          background: url(img/meatloverPizza.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pizza-menu .pizza-menu-container .pizzas .meatlover h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #pizza-menu .pizza-menu-container .pizzas .veggie {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pizza-menu .pizza-menu-container .pizzas .veggie .image {
+          background: url(img/veggiePizza.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pizza-menu .pizza-menu-container .pizzas .veggie h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #pizza-menu .pizza-menu-container .pizzas .hawiian {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pizza-menu .pizza-menu-container .pizzas .hawiian .image {
+          background: url(img/hawiianPizza.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pizza-menu .pizza-menu-container .pizzas .hawiian h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #pizza-menu .pizza-menu-container .pizzas .buffalo {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pizza-menu .pizza-menu-container .pizzas .buffalo .image {
+          background: url(img/buffaloPizza.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pizza-menu .pizza-menu-container .pizzas .buffalo h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+  #pizza-menu .options {
+    background: #681a1e;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px; }
+  #pizza-menu .options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px; }
+    #pizza-menu .options-container .crusts {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pizza-menu .options-container .crusts h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pizza-menu .options-container .crusts ul {
+        margin-top: 10px; }
+        #pizza-menu .options-container .crusts ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pizza-menu .options-container .sizes {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pizza-menu .options-container .sizes h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pizza-menu .options-container .sizes ul {
+        margin-top: 10px; }
+        #pizza-menu .options-container .sizes ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pizza-menu .options-container .sauces {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pizza-menu .options-container .sauces h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pizza-menu .options-container .sauces ul {
+        margin-top: 10px; }
+        #pizza-menu .options-container .sauces ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pizza-menu .options-container .meats {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pizza-menu .options-container .meats h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pizza-menu .options-container .meats ul {
+        margin-top: 10px; }
+        #pizza-menu .options-container .meats ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pizza-menu .options-container .cheeses {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pizza-menu .options-container .cheeses h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pizza-menu .options-container .cheeses ul {
+        margin-top: 10px; }
+        #pizza-menu .options-container .cheeses ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pizza-menu .options-container .veggies {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pizza-menu .options-container .veggies h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pizza-menu .options-container .veggies ul {
+        margin-top: 10px; }
+        #pizza-menu .options-container .veggies ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+
+@media all and (max-width: 720px) {
+  #pizza-menu .pizza-menu-container .pizzas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px; } }
+#bread-menu {
+  margin-bottom: 40px; }
+  #bread-menu .bread-menu-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #bread-menu .bread-menu-container a {
+      text-decoration: none; }
+      #bread-menu .bread-menu-container a .order-now {
+        text-transform: uppercase;
+        text-align: center;
+        background: #b32c50;
+        width: 50%;
+        margin: 30px auto;
+        padding: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+    #bread-menu .bread-menu-container .bread-types {
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #bread-menu .bread-menu-container .breads {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px;
+      margin-top: 10px;
+      grid-gap: 10px; }
+      #bread-menu .bread-menu-container .breads .cheesebread {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #bread-menu .bread-menu-container .breads .cheesebread .image {
+          background: url(img/cheesesticks.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #bread-menu .bread-menu-container .breads .cheesebread h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #bread-menu .bread-menu-container .breads .breadsticks {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #bread-menu .bread-menu-container .breads .breadsticks .image {
+          background: url(img/breadsticks.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #bread-menu .bread-menu-container .breads .breadsticks h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #bread-menu .bread-menu-container .breads .cinnamonbread {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #bread-menu .bread-menu-container .breads .cinnamonbread .image {
+          background: url(img/cinnamonbread.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #bread-menu .bread-menu-container .breads .cinnamonbread h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+    #bread-menu .bread-menu-container .options {
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white;
+      margin-top: 10px; }
+    #bread-menu .bread-menu-container .options-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px; }
+      #bread-menu .bread-menu-container .options-container .crusts {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #bread-menu .bread-menu-container .options-container .crusts h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #bread-menu .bread-menu-container .options-container .crusts ul {
+          margin-top: 10px; }
+          #bread-menu .bread-menu-container .options-container .crusts ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #bread-menu .bread-menu-container .options-container .sizes {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #bread-menu .bread-menu-container .options-container .sizes h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #bread-menu .bread-menu-container .options-container .sizes ul {
+          margin-top: 10px; }
+          #bread-menu .bread-menu-container .options-container .sizes ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #bread-menu .bread-menu-container .options-container .sauces {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #bread-menu .bread-menu-container .options-container .sauces h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #bread-menu .bread-menu-container .options-container .sauces ul {
+          margin-top: 10px; }
+          #bread-menu .bread-menu-container .options-container .sauces ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #bread-menu .bread-menu-container .options-container .meats {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #bread-menu .bread-menu-container .options-container .meats h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #bread-menu .bread-menu-container .options-container .meats ul {
+          margin-top: 10px; }
+          #bread-menu .bread-menu-container .options-container .meats ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #bread-menu .bread-menu-container .options-container .cheeses {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #bread-menu .bread-menu-container .options-container .cheeses h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #bread-menu .bread-menu-container .options-container .cheeses ul {
+          margin-top: 10px; }
+          #bread-menu .bread-menu-container .options-container .cheeses ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #bread-menu .bread-menu-container .options-container .veggies {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #bread-menu .bread-menu-container .options-container .veggies h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #bread-menu .bread-menu-container .options-container .veggies ul {
+          margin-top: 10px; }
+          #bread-menu .bread-menu-container .options-container .veggies ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+
+@media all and (max-width: 720px) {
+  #bread-menu .bread-menu-container .breads {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px; } }
+#chicken-menu {
+  margin-bottom: 40px; }
+  #chicken-menu .chicken-menu-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #chicken-menu .chicken-menu-container a {
+      text-decoration: none; }
+      #chicken-menu .chicken-menu-container a .order-now {
+        text-transform: uppercase;
+        text-align: center;
+        background: #b32c50;
+        width: 50%;
+        margin: 30px auto;
+        padding: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+    #chicken-menu .chicken-menu-container .chicken-types {
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #chicken-menu .chicken-menu-container .chicken {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px;
+      margin-top: 10px;
+      grid-gap: 10px; }
+      #chicken-menu .chicken-menu-container .chicken .baconchicken .image {
+        background: url(img/baconchicken.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100%; }
+      #chicken-menu .chicken-menu-container .chicken .baconchicken h2 {
+        background: #b32c50;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+      #chicken-menu .chicken-menu-container .chicken .buffalochicken {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #chicken-menu .chicken-menu-container .chicken .buffalochicken .image {
+          background: url(img/buffalowings.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #chicken-menu .chicken-menu-container .chicken .buffalochicken h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #chicken-menu .chicken-menu-container .chicken .jalapenochicken {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #chicken-menu .chicken-menu-container .chicken .jalapenochicken .image {
+          background: url(img/jalapenowings.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #chicken-menu .chicken-menu-container .chicken .jalapenochicken h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #chicken-menu .chicken-menu-container .chicken .bbqchicken {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #chicken-menu .chicken-menu-container .chicken .bbqchicken .image {
+          background: url(img/bbqwings.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #chicken-menu .chicken-menu-container .chicken .bbqchicken h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #chicken-menu .chicken-menu-container .chicken .boneless {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #chicken-menu .chicken-menu-container .chicken .boneless .image {
+          background: url(img/bonelesswings.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #chicken-menu .chicken-menu-container .chicken .boneless h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #chicken-menu .chicken-menu-container .chicken .hotwings {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #chicken-menu .chicken-menu-container .chicken .hotwings .image {
+          background: url(img/hotwings.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #chicken-menu .chicken-menu-container .chicken .hotwings h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #chicken-menu .chicken-menu-container .chicken .plain {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #chicken-menu .chicken-menu-container .chicken .plain .image {
+          background: url(img/plainwings.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #chicken-menu .chicken-menu-container .chicken .plain h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+    #chicken-menu .chicken-menu-container .options {
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white;
+      margin-top: 10px; }
+    #chicken-menu .chicken-menu-container .options-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px; }
+      #chicken-menu .chicken-menu-container .options-container .crusts {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #chicken-menu .chicken-menu-container .options-container .crusts h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #chicken-menu .chicken-menu-container .options-container .crusts ul {
+          margin-top: 10px; }
+          #chicken-menu .chicken-menu-container .options-container .crusts ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #chicken-menu .chicken-menu-container .options-container .sizes {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #chicken-menu .chicken-menu-container .options-container .sizes h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #chicken-menu .chicken-menu-container .options-container .sizes ul {
+          margin-top: 10px; }
+          #chicken-menu .chicken-menu-container .options-container .sizes ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #chicken-menu .chicken-menu-container .options-container .sauces {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #chicken-menu .chicken-menu-container .options-container .sauces h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #chicken-menu .chicken-menu-container .options-container .sauces ul {
+          margin-top: 10px; }
+          #chicken-menu .chicken-menu-container .options-container .sauces ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #chicken-menu .chicken-menu-container .options-container .meats {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #chicken-menu .chicken-menu-container .options-container .meats h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #chicken-menu .chicken-menu-container .options-container .meats ul {
+          margin-top: 10px; }
+          #chicken-menu .chicken-menu-container .options-container .meats ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #chicken-menu .chicken-menu-container .options-container .cheeses {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #chicken-menu .chicken-menu-container .options-container .cheeses h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #chicken-menu .chicken-menu-container .options-container .cheeses ul {
+          margin-top: 10px; }
+          #chicken-menu .chicken-menu-container .options-container .cheeses ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+      #chicken-menu .chicken-menu-container .options-container .veggies {
+        padding: 10px;
+        border: 1px solid #dbdbdb; }
+        #chicken-menu .chicken-menu-container .options-container .veggies h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #b32c50; }
+        #chicken-menu .chicken-menu-container .options-container .veggies ul {
+          margin-top: 10px; }
+          #chicken-menu .chicken-menu-container .options-container .veggies ul li {
+            font-size: 12px;
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #373331; }
+
+@media all and (max-width: 720px) {
+  #chicken-menu .chicken-menu-container .chicken {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px; } }
+#pasta-menu {
+  margin-bottom: 40px; }
+  #pasta-menu .pasta-menu-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #pasta-menu .pasta-menu-container a {
+      text-decoration: none; }
+      #pasta-menu .pasta-menu-container a .order-now {
+        text-transform: uppercase;
+        text-align: center;
+        background: #b32c50;
+        width: 50%;
+        margin: 30px auto;
+        padding: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+    #pasta-menu .pasta-menu-container .pasta-types {
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #pasta-menu .pasta-menu-container .pasta {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px;
+      margin-top: 10px;
+      grid-gap: 10px; }
+      #pasta-menu .pasta-menu-container .pasta .alfredo {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pasta-menu .pasta-menu-container .pasta .alfredo .image {
+          background: url(img/chickenalfredo.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pasta-menu .pasta-menu-container .pasta .alfredo h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #pasta-menu .pasta-menu-container .pasta .lasagna {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pasta-menu .pasta-menu-container .pasta .lasagna .image {
+          background: url(img/lasagna.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pasta-menu .pasta-menu-container .pasta .lasagna h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #pasta-menu .pasta-menu-container .pasta .spaghetti {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #pasta-menu .pasta-menu-container .pasta .spaghetti .image {
+          background: url(img/spaghetti.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #pasta-menu .pasta-menu-container .pasta .spaghetti h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+  #pasta-menu .options {
+    background: #681a1e;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px; }
+  #pasta-menu .options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px; }
+    #pasta-menu .options-container .crusts {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pasta-menu .options-container .crusts h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pasta-menu .options-container .crusts ul {
+        margin-top: 10px; }
+        #pasta-menu .options-container .crusts ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pasta-menu .options-container .sizes {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pasta-menu .options-container .sizes h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pasta-menu .options-container .sizes ul {
+        margin-top: 10px; }
+        #pasta-menu .options-container .sizes ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pasta-menu .options-container .sauces {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pasta-menu .options-container .sauces h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pasta-menu .options-container .sauces ul {
+        margin-top: 10px; }
+        #pasta-menu .options-container .sauces ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pasta-menu .options-container .meats {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pasta-menu .options-container .meats h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pasta-menu .options-container .meats ul {
+        margin-top: 10px; }
+        #pasta-menu .options-container .meats ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pasta-menu .options-container .cheeses {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pasta-menu .options-container .cheeses h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pasta-menu .options-container .cheeses ul {
+        margin-top: 10px; }
+        #pasta-menu .options-container .cheeses ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #pasta-menu .options-container .veggies {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #pasta-menu .options-container .veggies h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #pasta-menu .options-container .veggies ul {
+        margin-top: 10px; }
+        #pasta-menu .options-container .veggies ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+
+@media all and (max-width: 720px) {
+  #pasta-menu .pasta-menu-container .pasta {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px; } }
+#dessert-menu {
+  margin-bottom: 40px; }
+  #dessert-menu .dessert-menu-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #dessert-menu .dessert-menu-container a {
+      text-decoration: none; }
+      #dessert-menu .dessert-menu-container a .order-now {
+        text-transform: uppercase;
+        text-align: center;
+        background: #b32c50;
+        width: 50%;
+        margin: 30px auto;
+        padding: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+    #dessert-menu .dessert-menu-container .dessert-types {
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #dessert-menu .dessert-menu-container .dessert {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px;
+      margin-top: 10px;
+      grid-gap: 10px; }
+      #dessert-menu .dessert-menu-container .dessert .cookies {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #dessert-menu .dessert-menu-container .dessert .cookies .image {
+          background: url(img/cookies.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #dessert-menu .dessert-menu-container .dessert .cookies h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #dessert-menu .dessert-menu-container .dessert .brownie {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #dessert-menu .dessert-menu-container .dessert .brownie .image {
+          background: url(img/brownie.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #dessert-menu .dessert-menu-container .dessert .brownie h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #dessert-menu .dessert-menu-container .dessert .lava {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #dessert-menu .dessert-menu-container .dessert .lava .image {
+          background: url(img/lava.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #dessert-menu .dessert-menu-container .dessert .lava h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+  #dessert-menu .options {
+    background: #681a1e;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px; }
+  #dessert-menu .options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px; }
+    #dessert-menu .options-container .crusts {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #dessert-menu .options-container .crusts h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #dessert-menu .options-container .crusts ul {
+        margin-top: 10px; }
+        #dessert-menu .options-container .crusts ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #dessert-menu .options-container .sizes {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #dessert-menu .options-container .sizes h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #dessert-menu .options-container .sizes ul {
+        margin-top: 10px; }
+        #dessert-menu .options-container .sizes ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #dessert-menu .options-container .sauces {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #dessert-menu .options-container .sauces h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #dessert-menu .options-container .sauces ul {
+        margin-top: 10px; }
+        #dessert-menu .options-container .sauces ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #dessert-menu .options-container .meats {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #dessert-menu .options-container .meats h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #dessert-menu .options-container .meats ul {
+        margin-top: 10px; }
+        #dessert-menu .options-container .meats ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #dessert-menu .options-container .cheeses {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #dessert-menu .options-container .cheeses h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #dessert-menu .options-container .cheeses ul {
+        margin-top: 10px; }
+        #dessert-menu .options-container .cheeses ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #dessert-menu .options-container .veggies {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #dessert-menu .options-container .veggies h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #dessert-menu .options-container .veggies ul {
+        margin-top: 10px; }
+        #dessert-menu .options-container .veggies ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+
+@media all and (max-width: 720px) {
+  #dessert-menu .dessert-menu-container .dessert {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px; } }
+#drinks-menu {
+  margin-bottom: 40px; }
+  #drinks-menu .drinks-menu-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #drinks-menu .drinks-menu-container a {
+      text-decoration: none; }
+      #drinks-menu .drinks-menu-container a .order-now {
+        text-transform: uppercase;
+        text-align: center;
+        background: #b32c50;
+        width: 50%;
+        margin: 30px auto;
+        padding: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white; }
+    #drinks-menu .drinks-menu-container .drinks-types {
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #drinks-menu .drinks-menu-container .drinks {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px;
+      margin-top: 10px;
+      grid-gap: 10px; }
+      #drinks-menu .drinks-menu-container .drinks .coke {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #drinks-menu .drinks-menu-container .drinks .coke .image {
+          background: url(img/coke.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #drinks-menu .drinks-menu-container .drinks .coke h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #drinks-menu .drinks-menu-container .drinks .dietcoke {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #drinks-menu .drinks-menu-container .drinks .dietcoke .image {
+          background: url(img/dietcoke.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #drinks-menu .drinks-menu-container .drinks .dietcoke h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #drinks-menu .drinks-menu-container .drinks .sprite {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #drinks-menu .drinks-menu-container .drinks .sprite .image {
+          background: url(img/sprite.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #drinks-menu .drinks-menu-container .drinks .sprite h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #drinks-menu .drinks-menu-container .drinks .fanta {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #drinks-menu .drinks-menu-container .drinks .fanta .image {
+          background: url(img/fanta.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #drinks-menu .drinks-menu-container .drinks .fanta h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+      #drinks-menu .drinks-menu-container .drinks .water {
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #drinks-menu .drinks-menu-container .drinks .water .image {
+          background: url(img/water.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 100%; }
+        #drinks-menu .drinks-menu-container .drinks .water h2 {
+          background: #b32c50;
+          padding: 10px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: white; }
+  #drinks-menu .options {
+    background: #681a1e;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px; }
+  #drinks-menu .options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px; }
+    #drinks-menu .options-container .crusts {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #drinks-menu .options-container .crusts h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #drinks-menu .options-container .crusts ul {
+        margin-top: 10px; }
+        #drinks-menu .options-container .crusts ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #drinks-menu .options-container .sizes {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #drinks-menu .options-container .sizes h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #drinks-menu .options-container .sizes ul {
+        margin-top: 10px; }
+        #drinks-menu .options-container .sizes ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #drinks-menu .options-container .sauces {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #drinks-menu .options-container .sauces h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #drinks-menu .options-container .sauces ul {
+        margin-top: 10px; }
+        #drinks-menu .options-container .sauces ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #drinks-menu .options-container .meats {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #drinks-menu .options-container .meats h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #drinks-menu .options-container .meats ul {
+        margin-top: 10px; }
+        #drinks-menu .options-container .meats ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #drinks-menu .options-container .cheeses {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #drinks-menu .options-container .cheeses h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #drinks-menu .options-container .cheeses ul {
+        margin-top: 10px; }
+        #drinks-menu .options-container .cheeses ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+    #drinks-menu .options-container .veggies {
+      padding: 10px;
+      border: 1px solid #dbdbdb; }
+      #drinks-menu .options-container .veggies h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #drinks-menu .options-container .veggies ul {
+        margin-top: 10px; }
+        #drinks-menu .options-container .veggies ul li {
+          font-size: 12px;
+          padding: 2px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          color: #373331; }
+
+@media all and (max-width: 720px) {
+  #drinks-menu .drinks-menu-container .drinks {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px; } }
+#menu .menu-items h1 {
+  color: #681a1e;
+  font-family: 'Roboto', sans-serif; }
+
+#coupons .coupons-container {
+  width: 75%;
+  max-width: 1100px;
+  margin: 0 auto; }
+  #coupons .coupons-container a {
+    text-decoration: none; }
+    #coupons .coupons-container a .order-now {
+      text-transform: uppercase;
+      text-align: center;
+      background: #b32c50;
+      width: 50%;
+      margin: 30px auto;
+      padding: 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+  #coupons .coupons-container .coupons {
+    width: 100%;
+    margin-bottom: 40px; }
+    #coupons .coupons-container .coupons .coupon1 {
+      position: relative;
+      border: 2px dashed black;
+      padding: 40px 60px;
+      background: #F5F5F5; }
+      #coupons .coupons-container .coupons .coupon1 span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        font-size: 10px;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif; }
+      #coupons .coupons-container .coupons .coupon1 h1 {
+        margin-top: 15px;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #coupons .coupons-container .coupons .coupon1 h5 {
+        text-align: right;
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700; }
+      #coupons .coupons-container .coupons .coupon1 img {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px; }
+    #coupons .coupons-container .coupons .coupon2 {
+      position: relative;
+      border: 2px dashed black;
+      padding: 40px 60px;
+      background: #F5F5F5;
+      margin-top: 30px; }
+      #coupons .coupons-container .coupons .coupon2 span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        font-size: 10px;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif; }
+      #coupons .coupons-container .coupons .coupon2 h1 {
+        margin-top: 15px;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #coupons .coupons-container .coupons .coupon2 h5 {
+        text-align: right;
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700; }
+      #coupons .coupons-container .coupons .coupon2 img {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px; }
+    #coupons .coupons-container .coupons .coupon3 {
+      position: relative;
+      border: 2px dashed black;
+      padding: 40px 60px;
+      background: #F5F5F5;
+      margin-top: 30px; }
+      #coupons .coupons-container .coupons .coupon3 span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        font-size: 10px;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif; }
+      #coupons .coupons-container .coupons .coupon3 h1 {
+        margin-top: 15px;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #coupons .coupons-container .coupons .coupon3 h5 {
+        text-align: right;
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700; }
+      #coupons .coupons-container .coupons .coupon3 img {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px; }
+    #coupons .coupons-container .coupons .coupon4 {
+      position: relative;
+      border: 2px dashed black;
+      padding: 40px 60px;
+      background: #F5F5F5;
+      margin-top: 30px; }
+      #coupons .coupons-container .coupons .coupon4 span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        font-size: 10px;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif; }
+      #coupons .coupons-container .coupons .coupon4 h1 {
+        margin-top: 15px;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #coupons .coupons-container .coupons .coupon4 h5 {
+        text-align: right;
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700; }
+      #coupons .coupons-container .coupons .coupon4 img {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px; }
+    #coupons .coupons-container .coupons .coupon5 {
+      position: relative;
+      border: 2px dashed black;
+      padding: 40px 60px;
+      background: #F5F5F5;
+      margin-top: 30px; }
+      #coupons .coupons-container .coupons .coupon5 span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        font-size: 10px;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif; }
+      #coupons .coupons-container .coupons .coupon5 h1 {
+        margin-top: 15px;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #b32c50; }
+      #coupons .coupons-container .coupons .coupon5 h5 {
+        text-align: right;
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700; }
+      #coupons .coupons-container .coupons .coupon5 img {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px; }
+
+#menu .menu-items h1 {
+  color: #681a1e;
+  font-family: 'Roboto', sans-serif; }
+
+#order {
+  margin-bottom: 40px; }
+  #order .order-container {
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #order .order-container .alert.error {
+      background: red;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #order .order-container .alert.success {
+      background: green;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #order .order-container .order-now {
+      text-transform: uppercase;
+      text-align: center;
+      background: #b32c50;
+      width: 50%;
+      margin: 30px auto;
+      padding: 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white; }
+    #order .order-container h3 {
+      text-align: center;
+      padding: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+      color: #110c11; }
+    #order .order-container .desktop {
+      text-align: center;
+      padding-top: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: #110c11;
+      display: none; }
+    #order .order-container table {
+      margin: 0 auto; }
+      #order .order-container table th {
+        padding: 10px;
+        width: 120px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #110c11; }
+      #order .order-container table tr {
+        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #dddddd; }
+        #order .order-container table tr:nth-child(even) {
+          background: #dddddd; }
+      #order .order-container table td {
+        padding: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif; }
+      #order .order-container table .fa-times {
+        color: red; }
+    #order .order-container .form-container {
+      text-align: center;
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px; }
+      #order .order-container .form-container .pizza {
+        padding: 20px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #order .order-container .form-container .pizza h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 25px;
+          color: #110c11; }
+        #order .order-container .form-container .pizza form {
+          margin-top: 10px; }
+          #order .order-container .form-container .pizza form label {
+            display: block;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+          #order .order-container .form-container .pizza form select {
+            border-radius: 5px;
+            width: 200px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+            #order .order-container .form-container .pizza form select option {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 700;
+              color: #110c11; }
+      #order .order-container .form-container .bread {
+        padding: 20px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #order .order-container .form-container .bread h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 25px;
+          color: #110c11; }
+        #order .order-container .form-container .bread form {
+          margin-top: 10px; }
+          #order .order-container .form-container .bread form label {
+            display: block;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+          #order .order-container .form-container .bread form select {
+            border-radius: 5px;
+            width: 200px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+            #order .order-container .form-container .bread form select option {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 700;
+              color: #110c11; }
+      #order .order-container .form-container .chicken {
+        padding: 20px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #order .order-container .form-container .chicken h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 25px;
+          color: #110c11; }
+        #order .order-container .form-container .chicken form {
+          margin-top: 10px; }
+          #order .order-container .form-container .chicken form label {
+            display: block;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+          #order .order-container .form-container .chicken form select {
+            border-radius: 5px;
+            width: 200px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+            #order .order-container .form-container .chicken form select option {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 700;
+              color: #110c11; }
+      #order .order-container .form-container .pasta {
+        padding: 20px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #order .order-container .form-container .pasta h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 25px;
+          color: #110c11; }
+        #order .order-container .form-container .pasta form {
+          margin-top: 10px; }
+          #order .order-container .form-container .pasta form label {
+            display: block;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+          #order .order-container .form-container .pasta form select {
+            border-radius: 5px;
+            width: 200px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+            #order .order-container .form-container .pasta form select option {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 700;
+              color: #110c11; }
+      #order .order-container .form-container .dessert {
+        padding: 20px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #order .order-container .form-container .dessert h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 25px;
+          color: #110c11; }
+        #order .order-container .form-container .dessert form {
+          margin-top: 10px; }
+          #order .order-container .form-container .dessert form label {
+            display: block;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+          #order .order-container .form-container .dessert form select {
+            border-radius: 5px;
+            width: 200px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+            #order .order-container .form-container .dessert form select option {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 700;
+              color: #110c11; }
+      #order .order-container .form-container .drinks {
+        padding: 20px;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+        #order .order-container .form-container .drinks h2 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 25px;
+          color: #110c11; }
+        #order .order-container .form-container .drinks form {
+          margin-top: 10px; }
+          #order .order-container .form-container .drinks form label {
+            display: block;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+          #order .order-container .form-container .drinks form select {
+            border-radius: 5px;
+            width: 200px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11; }
+            #order .order-container .form-container .drinks form select option {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 700;
+              color: #110c11; }
+
+@media all and (max-width: 720px) {
+  #order .order-container .desktop {
+    display: block; }
+  #order .order-container table {
+    display: none; }
+  #order .order-container .form-container {
+    grid-template-columns: 1fr; } }
+#footer {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background: #dbdbdb;
+  padding: 30px;
+  text-align: center; }
+  #footer .name {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    background: url(img/pizzaLogo.png);
+    background-position: center;
+    background-size: cover;
+    height: 110px; }
+  #footer .icons {
+    text-align: center;
+    display: inline-block;
+    width: 100%; }
+    #footer .icons .fab {
+      font-size: 30px;
+      color: #681a1e;
+      padding: 15px; }
+  #footer .links {
+    text-align: center;
+    padding-top: 10px; }
+    #footer .links a {
+      text-decoration: none;
+      padding: 10px;
+      font-size: 20px;
+      color: #681a1e;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700; }
+    #footer .links p {
+      padding-top: 10px;
+      color: #681a1e;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px; }
+
+/*# sourceMappingURL=main.css.map */

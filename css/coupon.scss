@@ -1,0 +1,229 @@
+#menu{
+   .menu-items{
+      h1{
+         color: #681a1e;
+         font-family: 'Roboto', sans-serif;
+      }
+   }
+}
+#coupons{
+   .coupons-container{
+      width: 75%;
+      max-width: 1100px;
+      margin: 0 auto;
+      a{
+         text-decoration: none;
+         .order-now{
+            text-transform: uppercase;
+            text-align: center;
+            background: #b32c50;
+            width: 50%;
+            margin: 30px auto;
+            padding: 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: white;
+         }
+      }
+      .coupons{
+         width: 100%;
+         margin-bottom: 40px;
+         .coupon1{
+            position: relative;
+            border: 2px dashed black;
+            padding: 40px 60px;
+            background: #F5F5F5;
+            span{
+               position: absolute;
+               top: 0;
+               left: 0;
+               background: black;
+               font-size: 10px;
+               color: white;
+               border: 1px solid white;
+               padding: 10px;
+               font-family: 'Roboto', sans-serif;
+            }
+            h1{
+               margin-top: 15px;
+               font-size: 30px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #b32c50;
+            }
+            h5{
+               text-align: right;
+               position: absolute;
+               bottom: 10px;
+               right: 20px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+            }
+            img{
+               width: 50px;
+               position: absolute;
+               top: 0;
+               right: 10px;
+            }
+         }
+         .coupon2{
+            position: relative;
+            border: 2px dashed black;
+            padding: 40px 60px;
+            background: #F5F5F5;
+            margin-top: 30px;
+            span{
+               position: absolute;
+               top: 0;
+               left: 0;
+               background: black;
+               font-size: 10px;
+               color: white;
+               border: 1px solid white;
+               padding: 10px;
+               font-family: 'Roboto', sans-serif;
+            }
+            h1{
+               margin-top: 15px;
+               font-size: 30px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #b32c50;
+            }
+            h5{
+               text-align: right;
+               position: absolute;
+               bottom: 10px;
+               right: 20px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+            }
+            img{
+               width: 50px;
+               position: absolute;
+               top: 0;
+               right: 10px;
+            }
+         }
+         .coupon3{
+            position: relative;
+            border: 2px dashed black;
+            padding: 40px 60px;
+            background: #F5F5F5;
+            margin-top: 30px;
+            span{
+               position: absolute;
+               top: 0;
+               left: 0;
+               background: black;
+               font-size: 10px;
+               color: white;
+               border: 1px solid white;
+               padding: 10px;
+               font-family: 'Roboto', sans-serif;
+            }
+            h1{
+               margin-top: 15px;
+               font-size: 30px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #b32c50;
+            }
+            h5{
+               text-align: right;
+               position: absolute;
+               bottom: 10px;
+               right: 20px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+            }
+            img{
+               width: 50px;
+               position: absolute;
+               top: 0;
+               right: 10px;
+            }
+         }
+         .coupon4{
+            position: relative;
+            border: 2px dashed black;
+            padding: 40px 60px;
+            background: #F5F5F5;
+            margin-top: 30px;
+            span{
+               position: absolute;
+               top: 0;
+               left: 0;
+               background: black;
+               font-size: 10px;
+               color: white;
+               border: 1px solid white;
+               padding: 10px;
+               font-family: 'Roboto', sans-serif;
+            }
+            h1{
+               margin-top: 15px;
+               font-size: 30px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #b32c50;
+            }
+            h5{
+               text-align: right;
+               position: absolute;
+               bottom: 10px;
+               right: 20px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+            }
+            img{
+               width: 50px;
+               position: absolute;
+               top: 0;
+               right: 10px;
+            }
+         }
+         .coupon5{
+            position: relative;
+            border: 2px dashed black;
+            padding: 40px 60px;
+            background: #F5F5F5;
+            margin-top: 30px;
+            span{
+               position: absolute;
+               top: 0;
+               left: 0;
+               background: black;
+               font-size: 10px;
+               color: white;
+               border: 1px solid white;
+               padding: 10px;
+               font-family: 'Roboto', sans-serif;
+            }
+            h1{
+               margin-top: 15px;
+               font-size: 30px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #b32c50;
+            }
+            h5{
+               text-align: right;
+               position: absolute;
+               bottom: 10px;
+               right: 20px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+            }
+            img{
+               width: 50px;
+               position: absolute;
+               top: 0;
+               right: 10px;
+            }
+         }
+      }
+   }
+}

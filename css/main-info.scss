@@ -1,0 +1,468 @@
+#hamburger{
+   .hamburger-menu{
+      position: fixed;
+      background: #681a1e;
+      width: 100%;
+      height: 100%;
+      display: none;
+      z-index: 10;
+      img{
+         position: absolute;
+         width: 50px;
+      }
+      ul{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
+         li{
+            padding: 10px;
+            a{
+               text-decoration: none;
+               font-size: 25px; 
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: white;
+            }
+         }
+      }
+   }
+}
+
+#landing{
+   height: 50vh;
+   background: url(img/tables.jpg);
+   background-position: center;
+   background-size: cover;
+   .info{
+      padding: 90px;
+      text-align: center;
+      h1{
+         font-size: 60px;
+         color: white;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 700;
+      }
+      h2{
+         margin-top: 20px;
+         font-size: 30px;
+         color: white;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 700;
+      }
+   }
+}
+.container{
+   width: 75%;
+   max-width: 1100px;
+   margin: 0 auto;
+   #welcome{
+      padding-top: 60px;
+      .welcome{
+         h2{
+            color: #681a1e;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+         }
+         p{
+            margin: 0 auto;
+            width: 55%;
+            min-width: 300px;
+            padding-top: 20px;
+            color: #110c11;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            line-height: 1.5;
+         }
+         a{
+            text-decoration: none;
+            .button{
+               text-align: center;
+               margin-top: 10px;
+               background: #681a1e;
+               width: 100px;
+               padding: 10px;
+               margin-left: auto;
+               margin-right: auto;
+               border-radius: 15px;
+               color: white;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+            }
+         }
+      }
+   }
+   #custom{
+      margin-top: 60px;
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: 1fr 1fr 1fr;
+      .yourpizza{
+         -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         .info{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background: #222;
+            padding: 10px;
+            h2{
+               font-family: 'Roboto', sans-serif;
+               color: white;
+               text-align: center;
+            }
+            h3{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: white;
+               text-align: center;
+               padding-top: 5px;
+               font-size: 20px;
+            }
+         }
+         .image{
+            background: url(img/pepperoniPizza.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 150px;
+         }
+      }
+      .giftcard{
+         -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         .info{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background: #222;
+            padding: 10px;
+            h2{
+               font-family: 'Roboto', sans-serif;
+               color: white;
+               text-align: center;
+            }
+            h3{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: white;
+               text-align: center;
+               padding-top: 5px;
+               font-size: 20px;
+            }
+         }
+         .image{
+            background: url(img/giftcard.jpeg);
+            background-position: center;
+            background-size: cover;
+            height: 150px;
+         }
+      }
+      .order-online{
+         -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         .info{
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            background: #222;
+            padding: 10px;
+            h2{
+               font-family: 'Roboto', sans-serif;
+               color: white;
+               text-align: center;
+            }
+            h3{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: white;
+               text-align: center;
+               padding-top: 5px;
+               font-size: 20px;
+            }
+         }
+         .image{
+            background: url(img/orderonline.jpeg);
+            background-position: center;
+            background-size: cover;
+            height: 150px;
+         }
+      }
+   }
+}
+#specials{
+   padding: 60px 0 60px 0;
+   margin-top: 60px;
+   background: #f56a47;
+   .special-container{
+      width: 75%;
+      max-width: 1100px;
+      margin: 0 auto;
+      .title{
+         text-align: center;
+         color: #110c11;
+         .name{
+            font-family: 'Satisfy', cursive;
+            font-size: 40px;
+            font-weight: 700;
+         }
+         .special{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+         }
+         p{
+            padding-top: 20px;
+            font-family: 'Roboto', sans-serif;
+         }
+      }
+      .days{
+         padding-top: 30px;
+         display: grid;
+         grid-gap: 20px;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         text-align: center;
+         color: #110c11;
+         .tuesday{
+            h1{
+               font-family: 'Satisfy', cursive;
+               font-size: 25px;
+               padding-bottom: 10px;
+            }
+            h2{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               padding-bottom: 5px;
+            }
+            p{
+               font-family: 'Roboto', sans-serif;
+            }
+         }
+         .wednesday{
+            h1{
+               font-family: 'Satisfy', cursive;
+               font-size: 25px;
+               padding-bottom: 10px;
+            }
+            h2{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               padding-bottom: 5px;
+            }
+            p{
+               font-family: 'Roboto', sans-serif;
+            }
+         }
+         .thursday{
+            h1{
+               font-family: 'Satisfy', cursive;
+               font-size: 25px;
+               padding-bottom: 10px;
+            }
+            h2{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               padding-bottom: 5px;
+            }
+            p{
+               font-family: 'Roboto', sans-serif;
+            }
+         }
+         .friday{
+            h1{
+               font-family: 'Satisfy', cursive;
+               font-size: 25px;
+               padding-bottom: 10px;
+            }
+            h2{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               padding-bottom: 5px;
+            }
+            p{
+               font-family: 'Roboto', sans-serif;
+            }
+         }
+      }
+   }
+   .pizza-special{
+      padding-top: 30px;
+      text-align: center;
+      color: #110c11;
+      h1{
+         font-family: 'Satisfy', cursive;
+         font-weight: 700;
+         font-size: 30px;
+      }
+      p{
+         padding-top: 10px;
+         font-family: 'Roboto', sans-serif;
+         color: #110c11;
+         span{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #110c11;
+         }
+      }
+   }
+}
+#happy-hour{
+   background: #F0F0F0;
+   padding: 60px 0 60px 0;
+   text-align: center;
+   .happy-hour-container{
+      width: 75%;
+      max-width: 1100px;
+      margin: 0 auto;
+      .title{
+         color: #110c11;
+         h1{
+            font-family: 'Satisfy', cursive;
+            font-weight: 700;
+            font-size: 40px;
+         }
+         h2{
+            padding-top: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+         }
+      }
+      .time{
+         padding-top: 20px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 700;
+         color: #110c11;
+      }
+      p{
+         padding-top: 20px;
+         line-height: 1.5;
+         font-family: 'Roboto', sans-serif;
+         color: #110c11;
+      }
+   }
+}
+#locations{
+   background: #222;
+   .locations-container{
+      width: 75%;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+      .address1{
+         display: inline-block;
+         padding: 60px;
+         .address{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #f56a47;
+            text-transform: uppercase;
+         }
+         .phone{
+            padding-top: 10px;
+            color: white;
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+         }
+         .fulladdress{
+            padding-top: 10px;
+            padding-bottom: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: white;
+         }
+         .hours{
+            padding-top: 10px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            span{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+            }
+         }
+         .closed{
+            padding-top: 20px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+         }
+      }
+      .address2{
+         display: inline-block;
+         padding: 60px;
+         .address{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #f56a47;
+            text-transform: uppercase;
+         }
+         .phone{
+            padding-top: 10px;
+            color: white;
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+         }
+         .fulladdress{
+            padding-top: 10px;
+            padding-bottom: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: white;
+         }
+         .hours{
+            padding-top: 10px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            span{
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+            }
+         }
+         .closed{
+            padding-top: 20px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+         }
+      }
+   }
+}
+
+@media all and (max-width: 720px){
+   .container{
+      #welcome{
+         .welcome{
+            p{
+               width: 100%;
+               min-width: 0;
+            }
+         }
+      }
+      #custom{
+         grid-template-columns: 1fr;
+      }
+   }
+   #specials{
+      .special-container{
+         .days{
+            grid-template-columns: 1fr;
+         }
+      }
+   }
+   #locations{
+      .locations-container{
+         .address1{
+            padding: 60px 0 20px 0;
+         }
+         .address2{
+            padding: 20px 0 60px 0;
+         }
+      }
+   }
+}

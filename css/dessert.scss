@@ -1,0 +1,233 @@
+#dessert-menu{
+   margin-bottom: 40px;
+   .dessert-menu-container{
+      width: 75%;
+      max-width: 1100px;
+      margin: 0 auto;
+      a{
+         text-decoration: none;
+         .order-now{
+            text-transform: uppercase;
+            text-align: center;
+            background: #b32c50;
+            width: 50%;
+            margin: 30px auto;
+            padding: 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: white;
+         }
+      }
+      .dessert-types{
+         background: #681a1e;
+         padding: 10px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 700;
+         color: white;
+      }
+      .dessert{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-rows: 200px;
+         margin-top: 10px;
+         grid-gap: 10px;
+         .cookies{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            .image{
+               background: url(img/cookies.jpg);
+               background-position: center;
+               background-size: cover;
+               height: 100%;
+            }
+            h2{
+               background: #b32c50;
+               padding: 10px;
+               text-align: center;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: white;
+            }
+         }
+         .brownie{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            .image{
+               background: url(img/brownie.jpg);
+               background-position: center;
+               background-size: cover;
+               height: 100%;
+            }
+            h2{
+               background: #b32c50;
+               padding: 10px;
+               text-align: center;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: white;
+            }
+         }
+         .lava{
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            .image{
+               background: url(img/lava.jpg);
+               background-position: center;
+               background-size: cover;
+               height: 100%;
+            }
+            h2{
+               background: #b32c50;
+               padding: 10px;
+               text-align: center;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: white;
+            }
+         }
+      }
+   }
+   .options{
+      background: #681a1e;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white;
+      margin-top: 10px;
+   }
+   .options-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px;
+      .crusts{
+         padding: 10px;
+         border: 1px solid #dbdbdb;
+         h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #b32c50;
+         }
+         ul{
+            margin-top: 10px;
+            li{
+               font-size: 12px;
+               padding: 2px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #373331;
+            }
+         }
+      }
+      .sizes{
+         padding: 10px;
+         border: 1px solid #dbdbdb;
+         h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #b32c50;
+         }
+         ul{
+            margin-top: 10px;
+            li{
+               font-size: 12px;
+               padding: 2px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #373331;
+            }
+         }
+      }
+      .sauces{
+         padding: 10px;
+         border: 1px solid #dbdbdb;
+         h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #b32c50;
+         }
+         ul{
+            margin-top: 10px;
+            li{
+               font-size: 12px;
+               padding: 2px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #373331;
+            }
+         }
+      }
+      .meats{
+         padding: 10px;
+         border: 1px solid #dbdbdb;
+         h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #b32c50;
+         }
+         ul{
+            margin-top: 10px;
+            li{
+               font-size: 12px;
+               padding: 2px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #373331;
+            }
+         }
+      }
+      .cheeses{
+         padding: 10px;
+         border: 1px solid #dbdbdb;
+         h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #b32c50;
+         }
+         ul{
+            margin-top: 10px;
+            li{
+               font-size: 12px;
+               padding: 2px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #373331;
+            }
+         }
+      }
+      .veggies{
+         padding: 10px;
+         border: 1px solid #dbdbdb;
+         h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #b32c50;
+         }
+         ul{
+            margin-top: 10px;
+            li{
+               font-size: 12px;
+               padding: 2px;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               color: #373331;
+            }
+         }
+      }
+   }
+}
+
+@media all and (max-width: 720px){
+   #dessert-menu{
+      .dessert-menu-container{
+         .dessert{
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 200px 200px;
+         }
+      }
+   }
+}
